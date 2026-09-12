@@ -1,0 +1,248 @@
+[**Atrios Reloaded SDK v0.1.0**](../README.md)
+
+***
+
+[Atrios Reloaded SDK](../modules.md) / index
+
+# index
+
+**@atrios-reloaded/sdk** — NestJS SDK for interacting with the Tikka Soroban raffle contract on Stellar.
+
+## Modules
+- **Raffle** — create, fetch, list, and cancel raffles
+- **Ticket** — buy and refund tickets; query user holdings
+- **Wallet** — browser wallet adapters (Freighter, XBull, Albedo, LOBSTR, Rabet)
+- **User** — query on-chain participation data
+- **Admin** — pause/unpause contract and manage admin rights
+- **Network** — RPC / Horizon service configuration
+- **Fee Estimator** — estimate transaction fees before signing
+- **Utils** — formatting, validation, error classes
+- **Auth** — SEP-10 challenge/verification for wallet authentication
+
+## Example
+
+```ts
+import { RaffleService, TicketService, FreighterAdapter } from '@atrios-reloaded/sdk';
+```
+
+## Classes
+
+### Admin
+
+- [AdminModule](classes/AdminModule.md)
+- [AdminService](classes/AdminService.md)
+
+### Other
+
+- [AlbedoAdapter](classes/AlbedoAdapter.md)
+- [AuthError](classes/AuthError.md)
+- [ConsoleLogger](classes/ConsoleLogger.md)
+- [ContractFailureError](classes/ContractFailureError.md)
+- [FeeEstimatorModule](classes/FeeEstimatorModule.md)
+- [FeeEstimatorService](classes/FeeEstimatorService.md)
+- [FreighterAdapter](classes/FreighterAdapter.md)
+- [HorizonService](classes/HorizonService.md)
+- [InsufficientFundsError](classes/InsufficientFundsError.md)
+- [InvalidResponseError](classes/InvalidResponseError.md)
+- [InvalidTicketPurchaseError](classes/InvalidTicketPurchaseError.md)
+- [LobstrAdapter](classes/LobstrAdapter.md)
+- [MockRpcService](classes/MockRpcService.md)
+- [NetworkConfigError](classes/NetworkConfigError.md)
+- [NetworkError](classes/NetworkError.md)
+- [NetworkModule](classes/NetworkModule.md)
+- [NoOpLogger](classes/NoOpLogger.md)
+- [RabetAdapter](classes/RabetAdapter.md)
+- [RaffleEndedError](classes/RaffleEndedError.md)
+- [RaffleFullError](classes/RaffleFullError.md)
+- [RaffleModule](classes/RaffleModule.md)
+- [RaffleNotFoundError](classes/RaffleNotFoundError.md)
+- [RaffleService](classes/RaffleService.md)
+- [RaffleStateError](classes/RaffleStateError.md)
+- [RateLimitError](classes/RateLimitError.md)
+- [RpcError](classes/RpcError.md)
+- [RpcService](classes/RpcService.md)
+- [RpcTimeoutError](classes/RpcTimeoutError.md)
+- [Sep10VerificationError](classes/Sep10VerificationError.md)
+- [TicketModule](classes/TicketModule.md)
+- [TicketReadService](classes/TicketReadService.md)
+- [TicketService](classes/TicketService.md)
+- [TikkaSdkError](classes/TikkaSdkError.md)
+- [TransactionLifecycle](classes/TransactionLifecycle.md)
+- [TransactionRejectedError](classes/TransactionRejectedError.md)
+- [UnauthorizedError](classes/UnauthorizedError.md)
+- [UnavailableError](classes/UnavailableError.md)
+- [UserModule](classes/UserModule.md)
+- [WalletAdapter](classes/WalletAdapter.md)
+- [XBullAdapter](classes/XBullAdapter.md)
+
+### User
+
+- [UserService](classes/UserService.md)
+
+### Wallet
+
+- [MockWalletAdapter](classes/MockWalletAdapter.md)
+
+## Enumerations
+
+- [Sep10VerificationErrorCode](enumerations/Sep10VerificationErrorCode.md)
+- [TikkaSdkErrorCode](enumerations/TikkaSdkErrorCode.md)
+- [WalletName](enumerations/WalletName.md)
+
+## Functions
+
+- [assertNonEmpty](functions/assertNonEmpty.md)
+- [assertPositiveInt](functions/assertPositiveInt.md)
+- [assertSafeAmount](functions/assertSafeAmount.md)
+- [assertValidPublicKey](functions/assertValidPublicKey.md)
+- [assertValidRaffleId](functions/assertValidRaffleId.md)
+- [assertValidStroopsAmount](functions/assertValidStroopsAmount.md)
+- [assertValidTicketQuantity](functions/assertValidTicketQuantity.md)
+- [buildChallenge](functions/buildChallenge.md)
+- [buildRetryConfig](functions/buildRetryConfig.md)
+- [buildUnsignedOfflineTransaction](functions/buildUnsignedOfflineTransaction.md)
+- [classifySorobanRpcError](functions/classifySorobanRpcError.md)
+- [createInMemoryNonceStore](functions/createInMemoryNonceStore.md)
+- [formatContractResponse](functions/formatContractResponse.md)
+- [getRetryDecision](functions/getRetryDecision.md)
+- [isValidAddress](functions/isValidAddress.md)
+- [multiplyAmountByQuantity](functions/multiplyAmountByQuantity.md)
+- [normalizeAmount](functions/normalizeAmount.md)
+- [parseSorobanContractErrorCode](functions/parseSorobanContractErrorCode.md)
+- [resolveNetworkConfig](functions/resolveNetworkConfig.md)
+- [signTransactionOffline](functions/signTransactionOffline.md)
+- [stroopsToXlm](functions/stroopsToXlm.md)
+- [subscribeToContractEvents](functions/subscribeToContractEvents.md)
+- [subscribeToEvents](functions/subscribeToEvents.md)
+- [toTypedContractError](functions/toTypedContractError.md)
+- [toTypedSdkError](functions/toTypedSdkError.md)
+- [truncateAddress](functions/truncateAddress.md)
+- [validateBuyTicketInputs](functions/validateBuyTicketInputs.md)
+- [validateBuyTicketsInputs](functions/validateBuyTicketsInputs.md)
+- [validateCreateRaffleInput](functions/validateCreateRaffleInput.md)
+- [validateNetworkConfig](functions/validateNetworkConfig.md)
+- [validateQuantity](functions/validateQuantity.md)
+- [validateRaffleId](functions/validateRaffleId.md)
+- [verifyOfflineSignature](functions/verifyOfflineSignature.md)
+- [verifyResponse](functions/verifyResponse.md)
+- [withRetry](functions/withRetry.md)
+- [xlmToStroops](functions/xlmToStroops.md)
+
+## Interfaces
+
+### Admin
+
+- [AcceptAdminResult](interfaces/AcceptAdminResult.md)
+- [AdminWriteOptions](interfaces/AdminWriteOptions.md)
+- [PauseResult](interfaces/PauseResult.md)
+- [TransferAdminResult](interfaces/TransferAdminResult.md)
+- [UnpauseResult](interfaces/UnpauseResult.md)
+
+### Other
+
+- [AssetDescriptor](interfaces/AssetDescriptor.md)
+- [BatchPurchaseResult](interfaces/BatchPurchaseResult.md)
+- [BatchTicketPurchase](interfaces/BatchTicketPurchase.md)
+- [BuildChallengeOptions](interfaces/BuildChallengeOptions.md)
+- [BuyBatchParams](interfaces/BuyBatchParams.md)
+- [BuyBatchResult](interfaces/BuyBatchResult.md)
+- [BuyTicketParams](interfaces/BuyTicketParams.md)
+- [BuyTicketResult](interfaces/BuyTicketResult.md)
+- [BuyTicketsParams](interfaces/BuyTicketsParams.md)
+- [CancelRaffleParams](interfaces/CancelRaffleParams.md)
+- [CancelRaffleResult](interfaces/CancelRaffleResult.md)
+- [ClaimPrizeParams](interfaces/ClaimPrizeParams.md)
+- [ClaimPrizeResult](interfaces/ClaimPrizeResult.md)
+- [CreateRaffleEstimate](interfaces/CreateRaffleEstimate.md)
+- [CreateRaffleInput](interfaces/CreateRaffleInput.md)
+- [CreateRaffleResult](interfaces/CreateRaffleResult.md)
+- [EstimateFeeParams](interfaces/EstimateFeeParams.md)
+- [EventGapWarning](interfaces/EventGapWarning.md)
+- [EventSubscriptionHandle](interfaces/EventSubscriptionHandle.md)
+- [EventSubscriptionOptions](interfaces/EventSubscriptionOptions.md)
+- [FeeEstimateResult](interfaces/FeeEstimateResult.md)
+- [FeeQuote](interfaces/FeeQuote.md)
+- [FeeQuoteWarning](interfaces/FeeQuoteWarning.md)
+- [FeeResourceBreakdown](interfaces/FeeResourceBreakdown.md)
+- [GetFeeQuoteParams](interfaces/GetFeeQuoteParams.md)
+- [GetUserActivityParams](interfaces/GetUserActivityParams.md)
+- [GetUserTicketsParams](interfaces/GetUserTicketsParams.md)
+- [InvokeLifecycleOptions](interfaces/InvokeLifecycleOptions.md)
+- [MockRpcBehavior](interfaces/MockRpcBehavior.md)
+- [NetworkConfig](interfaces/NetworkConfig.md)
+- [PollConfig](interfaces/PollConfig.md)
+- [RaffleParams](interfaces/RaffleParams.md)
+- [RefundTicketParams](interfaces/RefundTicketParams.md)
+- [RefundTicketResult](interfaces/RefundTicketResult.md)
+- [RetryAttemptInfo](interfaces/RetryAttemptInfo.md)
+- [RetryConfig](interfaces/RetryConfig.md)
+- [RetryDecision](interfaces/RetryDecision.md)
+- [RpcConfig](interfaces/RpcConfig.md)
+- [SignTransactionResult](interfaces/SignTransactionResult.md)
+- [SimulateResult](interfaces/SimulateResult.md)
+- [SubmitResult](interfaces/SubmitResult.md)
+- [TikkaLogger](interfaces/TikkaLogger.md)
+- [TriggerDrawParams](interfaces/TriggerDrawParams.md)
+- [TriggerDrawResult](interfaces/TriggerDrawResult.md)
+- [UserActivitySummary](interfaces/UserActivitySummary.md)
+- [UserParticipation](interfaces/UserParticipation.md)
+- [UserRaffleActivity](interfaces/UserRaffleActivity.md)
+- [UserTicket](interfaces/UserTicket.md)
+- [VerifyResponseOptions](interfaces/VerifyResponseOptions.md)
+- [WalletAdapterOptions](interfaces/WalletAdapterOptions.md)
+- [WalletCapabilities](interfaces/WalletCapabilities.md)
+- [WinnerResult](interfaces/WinnerResult.md)
+- [WinningEntry](interfaces/WinningEntry.md)
+
+### User
+
+- [GetParticipationParams](interfaces/GetParticipationParams.md)
+
+### Wallet
+
+Useful for testing and development scenarios where you need
+deterministic wallet behavior without requiring a real extension.
+
+- [MockWalletOptions](interfaces/MockWalletOptions.md)
+
+## Type Aliases
+
+- [AssetDto](type-aliases/AssetDto.md)
+- [ChallengeCreationOptions](type-aliases/ChallengeCreationOptions.md)
+- [ChallengeVerificationOptions](type-aliases/ChallengeVerificationOptions.md)
+- [FeeQuoteConfidence](type-aliases/FeeQuoteConfidence.md)
+- [FeeQuoteSource](type-aliases/FeeQuoteSource.md)
+- [RaffleData](type-aliases/RaffleData.md)
+- [RaffleMetadata](type-aliases/RaffleMetadata.md)
+- [RaffleTransition](type-aliases/RaffleTransition.md)
+- [RetryFailureClass](type-aliases/RetryFailureClass.md)
+- [RetryJitter](type-aliases/RetryJitter.md)
+- [TicketPurchaseField](type-aliases/TicketPurchaseField.md)
+- [TikkaNetwork](type-aliases/TikkaNetwork.md)
+- [TxMemo](type-aliases/TxMemo.md)
+- [TxResponse](type-aliases/TxResponse.md)
+
+## Variables
+
+- [AssetSchema](variables/AssetSchema.md)
+- [ContractErrorType](variables/ContractErrorType.md)
+- [ContractFn](variables/ContractFn.md)
+- [DEFAULT\_RETRY\_CONFIG](variables/DEFAULT_RETRY_CONFIG.md)
+- [DEFAULT\_RPC\_CONFIG](variables/DEFAULT_RPC_CONFIG.md)
+- [defaultLogger](variables/defaultLogger.md)
+- [formatAddress](variables/formatAddress.md)
+- [METADATA\_CATEGORY\_MAX](variables/METADATA_CATEGORY_MAX.md)
+- [METADATA\_CID\_MAX](variables/METADATA_CID_MAX.md)
+- [METADATA\_DESCRIPTION\_MAX](variables/METADATA_DESCRIPTION_MAX.md)
+- [METADATA\_IMAGE\_URL\_MAX](variables/METADATA_IMAGE_URL_MAX.md)
+- [METADATA\_IMAGE\_URLS\_MAX\_COUNT](variables/METADATA_IMAGE_URLS_MAX_COUNT.md)
+- [METADATA\_TITLE\_MAX](variables/METADATA_TITLE_MAX.md)
+- [NETWORK\_PRESETS](variables/NETWORK_PRESETS.md)
+- [RaffleMetadataSchema](variables/RaffleMetadataSchema.md)
+- [RaffleStatus](variables/RaffleStatus.md)
+- [SOROBAN\_RPC\_BASE\_DELAY\_MS](variables/SOROBAN_RPC_BASE_DELAY_MS.md)
+- [SOROBAN\_RPC\_MAX\_DELAY\_MS](variables/SOROBAN_RPC_MAX_DELAY_MS.md)
+- [SOROBAN\_RPC\_MAX\_RETRIES](variables/SOROBAN_RPC_MAX_RETRIES.md)
+- [SUPPORTED\_NETWORKS](variables/SUPPORTED_NETWORKS.md)
+- [TICKET\_CONSTRAINTS](variables/TICKET_CONSTRAINTS.md)
+- [validateAddress](variables/validateAddress.md)

@@ -1,0 +1,13 @@
+[**Atrios Reloaded SDK v0.1.0**](../../README.md)
+
+***
+
+[Atrios Reloaded SDK](../../modules.md) / [index](../README.md) / SUPPORTED\_NETWORKS
+
+# Variable: SUPPORTED\_NETWORKS
+
+> `const` **SUPPORTED\_NETWORKS**: [`TikkaNetwork`](../type-aliases/TikkaNetwork.md)[]
+
+Defined in: [network/network.config.ts:325](https://github.com/Grants268/atrios-reloaded/blob/241a365e8b7ca6b9ca80b6a1a45de575067cb7fa/sdk/src/network/network.config.ts#L325)
+
+The network names accepted by `resolveNetworkConfig`.
