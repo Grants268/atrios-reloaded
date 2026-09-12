@@ -1,8 +1,22 @@
 {
-  "name": "@tikka/types",
+  "name": "@atrios-reloaded/types",
   "version": "1.0.0",
+  "description": "Shared domain types for the Tikka raffle platform",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crackedstudio/atrios-reloaded.git",
+    "directory": "packages/types"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
@@ -10,5 +24,8 @@
   },
   "devDependencies": {
     "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": "22"
   }
 }

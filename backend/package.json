@@ -1,5 +1,5 @@
 {
-  "name": "tikka-backend",
+  "name": "atrios-reloaded-backend",
   "version": "0.1.0",
   "description": "Tikka API layer — auth, metadata, indexer merge, notifications",
   "private": true,
@@ -61,7 +61,7 @@
     "sharp": "0.35.3",
     "typeorm": "^0.3.28",
     "zod": "^4.4.3",
-    "@tikka/types": "workspace:*"
+    "@atrios-reloaded/types": "^1.0.0"
   },
   "jest": {
     "moduleFileExtensions": [

@@ -1,5 +1,5 @@
 {
-    "name": "tikka",
+    "name": "atrios-reloaded",
     "private": true,
     "license": "Apache-2.0",
     "version": "0.0.0",
@@ -17,7 +17,7 @@
         "test": "vitest --run",
         "test:unit": "vitest --run",
         "test:e2e": "playwright test",
-        "generate:types": "openapi-typescript ../backend/openapi.json -o src/types/api.generated.ts",
+        "generate:types": "openapi-typescript openapi.json -o src/types/api.generated.ts",
         "preview": "vite preview",
         "validate-env": "node scripts/validate-env.js",
         "test:e2e:ui": "playwright test --ui",
@@ -33,7 +33,7 @@
         "@tailwindcss/vite": "^4.1.13",
         "@tanstack/react-query": "^5.101.1",
         "@tanstack/react-query-devtools": "^5.101.1",
-        "@tikka/sdk": "workspace:*",
+        "@atrios-reloaded/sdk": "workspace:*",
         "@vercel/analytics": "^1.5.0",
         "@vercel/speed-insights": "^1.2.0",
         "canvas-confetti": "^1.9.4",
@@ -53,7 +53,7 @@
         "workbox-window": "^7.4.1",
         "zod": "^4.4.3",
         "zustand": "^5.0.15",
-        "@tikka/types": "workspace:*"
+        "@atrios-reloaded/types": "^1.0.0"
     },
     "devDependencies": {
         "@axe-core/playwright": "^4.10.1",

@@ -1,5 +1,5 @@
 {
-  "name": "@tikka/sdk",
+  "name": "@atrios-reloaded/sdk",
   "version": "0.1.0",
   "description": "NestJS SDK for Tikka Soroban contract interaction",
   "license": "Apache-2.0",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crackedstudio/tikka.git",
+    "url": "git+https://github.com/crackedstudio/atrios-reloaded.git",
     "directory": "sdk"
   },
   "main": "dist/index.js",
@@ -37,10 +37,10 @@
     }
   },
   "bin": {
-    "tikka": "./bin/tikka.cjs"
+    "atrios-reloaded": "./bin/atrios-reloaded.cjs"
   },
   "scripts": {
-    "cli": "node bin/tikka.cjs",
+    "cli": "node bin/atrios-reloaded.cjs",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "build": "nest build",
     "build:read": "tsc -p tsconfig.read.json",
@@ -52,9 +52,9 @@
     "test": "jest --config jest.config.cjs",
     "test:testnet": "TIKKA_TESTNET_TESTS=1 jest --config jest.config.cjs",
     "test:integration": "TIKKA_TESTNET_TESTS=1 jest --config jest.config.cjs --testPathPattern=test/integration",
-    "tikka": "node bin/tikka.mjs",
+    "atrios-reloaded": "node bin/atrios-reloaded.cjs",
     "examples:check": "tsc --project examples/tsconfig.json",
-    "example:cli": "node bin/tikka.mjs",
+    "example:cli": "node bin/atrios-reloaded.cjs",
     "example:quickstart": "ts-node examples/quickstart.ts",
     "example:create-raffle": "ts-node examples/create-raffle.ts",
     "example:buy-tickets": "ts-node examples/buy-tickets.ts",
@@ -74,7 +74,7 @@
   },
   "size-limit": [
     {
-      "name": "@tikka/sdk light",
+      "name": "@atrios-reloaded/sdk light",
       "path": "dist/cjs/light.js",
       "limit": "25 Kb",
       "gzip": true,
@@ -102,7 +102,7 @@
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.0",
     "zod": "^4.4.3",
-    "@tikka/types": "workspace:*"
+    "@atrios-reloaded/types": "^1.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.16",

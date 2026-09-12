@@ -23,7 +23,7 @@ const runCLI = (
   timeout = 5000
 ): Promise<{ stdout: string; stderr: string; exitCode: number }> => {
   return new Promise((resolve, reject) => {
-    const cliPath = path.join(__dirname, '../bin/tikka.cjs');
+    const cliPath = path.join(__dirname, '../bin/atrios-reloaded.cjs');
     const child = spawn('node', [cliPath, ...args], {
       cwd: path.join(__dirname, '..'),
     });

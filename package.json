@@ -1,5 +1,5 @@
 {
-  "name": "tikka",
+  "name": "atrios-reloaded",
   "private": true,
   "license": "Apache-2.0",
   "workspaces": [
@@ -12,11 +12,11 @@
   "scripts": {
     "install:all": "pnpm install",
     "build": "turbo run build",
-    "build:client": "turbo run build --filter=tikka",
-    "build:sdk": "turbo run build --filter=@tikka/sdk",
-    "build:backend": "turbo run build --filter=tikka-backend",
-    "build:indexer": "turbo run build --filter=tikka-indexer",
-    "build:oracle": "turbo run build --filter=tikka-oracle",
+    "build:client": "turbo run build --filter=atrios-reloaded",
+    "build:sdk": "turbo run build --filter=@atrios-reloaded/sdk",
+    "build:backend": "turbo run build --filter=atrios-reloaded-backend",
+    "build:indexer": "turbo run build --filter=atrios-reloaded-indexer",
+    "build:oracle": "turbo run build --filter=atrios-reloaded-oracle",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",

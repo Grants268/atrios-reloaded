@@ -1,5 +1,5 @@
 {
-  "name": "tikka-oracle",
+  "name": "atrios-reloaded-oracle",
   "version": "0.1.0",
   "description": "Tikka randomness oracle — VRF/PRNG and receive_randomness submitter",
   "private": true,
@@ -43,7 +43,7 @@
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0",
     "zod": "^4.4.3",
-    "@tikka/types": "workspace:*"
+    "@atrios-reloaded/types": "^1.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.4.0",

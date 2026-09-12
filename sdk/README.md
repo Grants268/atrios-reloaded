@@ -52,7 +52,7 @@ Every public entry point and its runtime compatibility. Use this table when choo
 | `RabetAdapter` | ✅ | ❌ | Requires Rabet extension (`window.rabet`). |
 | `MockWalletAdapter` | ✅ | ✅ | For tests, Storybook, and examples without a real wallet. |
 | Utils (`errors`, `validation`, `formatting`, `retry`, `BigNumber`) | ✅ | ✅ | Pure utilities; no environment-specific APIs. |
-| CLI (`tikka` / `bin/tikka.cjs`) | ❌ | ✅ | Node-only; uses `commander`, `inquirer`, and filesystem. |
+| CLI (`atrios-reloaded` / `bin/atrios-reloaded.cjs`) | ❌ | ✅ | Node-only; uses `commander`, `inquirer`, and filesystem. |
 
 **Legend:** ✅ supported · ⚠️ works with bundler/polyfill or is not the primary target · ❌ not supported
 
@@ -193,7 +193,7 @@ document the rationale in the PR.
 - `src/wallet/` — Multi-wallet adapter system.
 - `src/modules/` — Feature modules (Raffle, Ticket, User).
 - `src/utils/` — Shared utilities for formatting, validation, and error handling.
-- `bin/tikka.cjs` — Developer CLI for network testing and contract interaction.
+- `bin/atrios-reloaded.cjs` — Developer CLI for network testing and contract interaction.
 
 ## CLI Commands
 

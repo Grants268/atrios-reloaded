@@ -1,11 +1,11 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.0.0/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "crackedstudio/tikka" }],
+  "changelog": ["@changesets/changelog-github", { "repo": "crackedstudio/atrios-reloaded" }],
   "commit": false,
   "fixed": [],
   "linked": [],
   "access": "public",
   "baseBranch": "master",
   "updateInternalDependencies": "patch",
-  "ignore": ["tikka", "tikka-backend", "tikka-indexer", "tikka-oracle"]
+  "ignore": ["atrios-reloaded", "atrios-reloaded-backend", "atrios-reloaded-indexer", "atrios-reloaded-oracle"]
 }

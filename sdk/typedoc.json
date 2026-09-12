@@ -3,7 +3,7 @@
   "entryPoints": ["src/index.ts", "src/index.read.ts", "src/index.write.ts"],
   "entryPointStrategy": "resolve",
   "out": "./docs",
-  "name": "Tikka SDK",
+  "name": "Atrios Reloaded SDK",
   "readme": "README.md",
   "includeVersion": true,
   "categorizeByGroup": true,
@@ -21,7 +21,7 @@
   "excludeProtected": true,
   "excludeInternal": true,
   "navigationLinks": {
-    "GitHub": "https://github.com/crackedstudio/tikka"
+    "GitHub": "https://github.com/crackedstudio/@atrios-reloaded"
   },
   "exclude": ["**/*.spec.ts", "**/test/**", "**/node_modules/**", "**/dist/**"],
   "excludePrivate": true,
