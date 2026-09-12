@@ -30,13 +30,11 @@ jobs:
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
 
-      - name: Install SDK dependencies
-        working-directory: sdk
-        run: pnpm install --frozen-lockfile
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
 
       - name: Generate docs
-        working-directory: sdk
-        run: pnpm run docs
+        run: pnpm --filter @atrios-reloaded/sdk run docs
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4

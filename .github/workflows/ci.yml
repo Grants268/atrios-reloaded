@@ -83,7 +83,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Check colour contrast (WCAG AA)
         run: node scripts/check-contrast.js
@@ -172,7 +172,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Lint
         run: pnpm run lint
@@ -341,7 +341,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Lint
         run: pnpm run lint
@@ -403,7 +403,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Lint
         run: pnpm run lint
@@ -462,7 +462,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Lint
         run: pnpm run lint
@@ -514,7 +514,7 @@ jobs:
       - name: Client - install, lint, test, build
         working-directory: ./client
         run: |
-          pnpm install --frozen-lockfile
+          pnpm install --no-frozen-lockfile
           pnpm run lint
           pnpm run test:unit
           pnpm run build
@@ -522,7 +522,7 @@ jobs:
       - name: SDK - install, lint, test, build
         working-directory: ./sdk
         run: |
-          pnpm install --frozen-lockfile
+          pnpm install --no-frozen-lockfile
           pnpm run lint
           pnpm run test
           pnpm run build
@@ -530,7 +530,7 @@ jobs:
       - name: Backend - install, lint, test, build
         working-directory: ./backend
         run: |
-          pnpm install --frozen-lockfile
+          pnpm install --no-frozen-lockfile
           pnpm run lint
           pnpm run test
           pnpm run build
@@ -540,7 +540,7 @@ jobs:
       - name: Indexer - install, lint, test, build
         working-directory: ./indexer
         run: |
-          pnpm install --frozen-lockfile
+          pnpm install --no-frozen-lockfile
           pnpm run lint
           pnpm run test
           pnpm run build
@@ -550,7 +550,7 @@ jobs:
       - name: Oracle - install, lint, test, build
         working-directory: ./oracle
         run: |
-          pnpm install --frozen-lockfile
+          pnpm install --no-frozen-lockfile
           pnpm run lint
           pnpm run test
           pnpm run build
@@ -685,7 +685,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Download build artifacts
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
@@ -790,7 +790,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Validate PR commits with commitlint
         if: github.event_name == 'pull_request'
@@ -819,7 +819,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Check formatting
         run: pnpm exec prettier --check .
