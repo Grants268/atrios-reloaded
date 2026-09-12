@@ -43,7 +43,7 @@
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0",
     "zod": "^4.4.3",
-    "@atrios-reloaded/types": "^1.0.0"
+    "@atrios-reloaded/types": "workspace:*"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.4.0",
