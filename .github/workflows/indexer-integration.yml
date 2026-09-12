@@ -33,9 +33,6 @@ jobs:
   integration-tests:
     name: Reorg / Snapshot / Migration Integration
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./indexer
 
     steps:
       - name: Checkout
@@ -51,6 +48,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
@@ -61,13 +59,13 @@ jobs:
       # that is torn down in afterAll, guaranteeing full isolation.
 
       - name: Run integration tests
-        run: pnpm run test:integration
+        run: pnpm --filter atrios-reloaded-indexer run test:integration
         env:
           NODE_ENV: test
         timeout-minutes: 15
 
       - name: Migration rollback check (up → down → up)
-        run: pnpm run migration:rollback-check
+        run: pnpm --filter atrios-reloaded-indexer run migration:rollback-check
         timeout-minutes: 5
 
   # Summary job — fails if integration tests fail
