@@ -1,9 +1,9 @@
 /**
  * @packageDocumentation
- * **@tikka/sdk/write** — Write (signing + submission) sub-path export for @tikka/sdk.
+ * **@atrios-reloaded/sdk/write** — Write (signing + submission) sub-path export for @atrios-reloaded/sdk.
  *
  * Contains everything needed to build, sign, and submit Soroban transactions.
- * Consumers who only need read-only queries should import from `@tikka/sdk/read`
+ * Consumers who only need read-only queries should import from `@atrios-reloaded/sdk/read`
  * instead to avoid pulling in wallet adapter and signing overhead.
  *
  * ## Included
@@ -15,11 +15,11 @@
  * - `FeeEstimatorService`
  * - Write-side service classes (`RaffleService`, `TicketService`, `UserService`)
  * - All write-side types (`RaffleParams`, `BuyTicketParams`, `RefundTicketParams`, etc.)
- * - Re-exports everything from `@tikka/sdk/read` for convenience
+ * - Re-exports everything from `@atrios-reloaded/sdk/read` for convenience
  *
  * @example
  * ```ts
- * import { ContractService, FreighterAdapter } from '@tikka/sdk/write';
+ * import { ContractService, FreighterAdapter } from '@atrios-reloaded/sdk/write';
  * ```
  */
 

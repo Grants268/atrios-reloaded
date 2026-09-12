@@ -1,4 +1,4 @@
-import { RaffleStatus } from "@tikka/types";
+import { RaffleStatus } from "@atrios-reloaded/types";
 function mapContractStatus(status: number): RaffleStatus {
   switch(status) {
     case 0: return RaffleStatus.OPEN;

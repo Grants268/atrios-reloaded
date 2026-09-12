@@ -1,7 +1,7 @@
 /**
  * transactionPipeline.spec.ts
  *
- * Tests for runPipeline, now driving the @tikka/sdk ContractService stage
+ * Tests for runPipeline, now driving the @atrios-reloaded/sdk ContractService stage
  * methods (simulate → sign → submit → poll). A fake SdkPipelineTarget stands in
  * for the SDK transport, while TikkaSdkError/TikkaSdkErrorCode come from the
  * real SDK so err.code classification matches production.
@@ -10,7 +10,7 @@
  */
 
 import { vi, describe, it, expect, beforeEach } from "vitest";
-import { TikkaSdkError, TikkaSdkErrorCode } from "@tikka/sdk";
+import { TikkaSdkError, TikkaSdkErrorCode } from "@atrios-reloaded/sdk";
 import { runPipeline, sdkErrorToPipelineError } from "./transactionPipeline";
 import type { PipelineProgressEvent, SdkPipelineTarget } from "./transactionPipeline";
 
@@ -32,7 +32,7 @@ const successSim = {
   networkPassphrase: "Test SDF Network ; September 2015",
 };
 
-const successPoll = (overrides: Partial<import("@tikka/sdk").SubmitResult> = {}) => ({
+const successPoll = (overrides: Partial<import("@atrios-reloaded/sdk").SubmitResult> = {}) => ({
   returnValue: 1,
   txHash: "POLLHASH",
   ledger: 42,

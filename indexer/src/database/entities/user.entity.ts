@@ -1,5 +1,5 @@
 import { Column, Entity, Index, PrimaryColumn, UpdateDateColumn } from "typeorm";
-import { User } from "@tikka/types";
+import { User } from "@atrios-reloaded/types";
 
 /**
  * Aggregated per-user participation statistics.

@@ -1,6 +1,6 @@
 /**
  * @packageDocumentation
- * **@tikka/sdk/read** — Read-only sub-path export for @tikka/sdk.
+ * **@atrios-reloaded/sdk/read** — Read-only sub-path export for @atrios-reloaded/sdk.
  *
  * Contains only the utilities needed to query raffle state from the Soroban
  * contract and the Stellar network.  No signing, no wallet adapters, no
@@ -28,7 +28,7 @@
  *
  * @example
  * ```ts
- * import { RpcService, RaffleStatus, ContractFn } from '@tikka/sdk/read';
+ * import { RpcService, RaffleStatus, ContractFn } from '@atrios-reloaded/sdk/read';
  * ```
  */
 

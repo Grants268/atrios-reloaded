@@ -7,7 +7,7 @@ import {
   JoinColumn,
 } from "typeorm";
 import { RaffleEntity } from "./raffle.entity";
-import { Ticket } from "@tikka/types";
+import { Ticket } from "@atrios-reloaded/types";
 
 /**
  * Represents a single raffle ticket purchased by a user.

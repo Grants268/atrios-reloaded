@@ -1,5 +1,5 @@
 /**
- * sdkClient.ts — client-side wiring for `@tikka/sdk`.
+ * sdkClient.ts — client-side wiring for `@atrios-reloaded/sdk`.
  *
  * Replaces the hand-rolled `contractService.ts` (which managed Soroban
  * transactions directly via `@stellar/stellar-sdk` v14). The SDK's browser-safe
@@ -30,7 +30,7 @@ import {
   type NetworkConfig as SdkNetworkConfig,
   type SignTransactionResult,
   type WalletCapabilities,
-} from "@tikka/sdk";
+} from "@atrios-reloaded/sdk";
 import { TransactionBuilder } from "@stellar/stellar-sdk";
 import type { Transaction, FeeBumpTransaction } from "@stellar/stellar-sdk";
 import { STELLAR_CONFIG } from "../config/stellar";
@@ -489,7 +489,7 @@ export function getConfig() {
 
 /**
  * Static-style facade preserving the `ContractService.*` call sites of the
- * legacy service (e.g. `useRaffleMutations`), now backed by `@tikka/sdk`.
+ * legacy service (e.g. `useRaffleMutations`), now backed by `@atrios-reloaded/sdk`.
  */
 export const ContractService = {
   estimateCreate,

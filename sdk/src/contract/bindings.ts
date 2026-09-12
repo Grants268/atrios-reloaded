@@ -49,5 +49,5 @@ export type ContractFnName = (typeof ContractFn)[keyof typeof ContractFn];
 /**
  * Raffle states as returned by get_raffle_data.
  */
-import { RaffleStatus } from "@tikka/types";
+import { RaffleStatus } from "@atrios-reloaded/types";
 export { RaffleStatus };

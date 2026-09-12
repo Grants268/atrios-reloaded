@@ -5,7 +5,7 @@ import * as StellarSdk from '@stellar/stellar-sdk';
 import { ContractBuilders } from './contract.builders';
 
 import { Pick } from "typescript";
-import { Raffle } from "@tikka/types";
+import { Raffle } from "@atrios-reloaded/types";
 export type RaffleData = Pick<Raffle, "status" | "prizeAmount"> & { raffleId: number };
 
 @Injectable()

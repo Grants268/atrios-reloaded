@@ -26,7 +26,7 @@ import {
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const readBarrel = require('../index.read');
 
-describe('@tikka/sdk/read — entry point', () => {
+describe('@atrios-reloaded/sdk/read — entry point', () => {
   it('exports ReadOnlyRaffleService', () => {
     expect(ReadOnlyRaffleService).toBeDefined();
     expect(typeof ReadOnlyRaffleService).toBe('function'); // class

@@ -28,6 +28,25 @@ module.exports = [
     },
   },
   {
+    // Logger, retry, and RPC services intentionally use console as the output sink
+    files: [
+      'src/utils/logger.ts',
+      'src/utils/retry.ts',
+      'src/network/rpc.service.ts',
+      'src/light/rpc.service.ts',
+    ],
+    rules: {
+      'no-console': 'off',
+    },
+  },
+  {
+    // Test files may use console for debugging
+    files: ['src/**/*.spec.ts', 'test/**/*.spec.ts'],
+    rules: {
+      'no-console': 'off',
+    },
+  },
+  {
     ignores: ['dist/**', 'node_modules/**'],
   },
 ];

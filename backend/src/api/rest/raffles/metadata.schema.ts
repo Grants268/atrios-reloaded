@@ -11,7 +11,7 @@ import {
   METADATA_CID_MAX,
   METADATA_IMAGE_URL_MAX,
   METADATA_IMAGE_URLS_MAX_COUNT,
-} from "@tikka/sdk/dist/schemas/raffle-metadata.schema";
+} from "@atrios-reloaded/sdk/dist/schemas/raffle-metadata.schema";
 
 // Re-export constants for backward compatibility
 export {

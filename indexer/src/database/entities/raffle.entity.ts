@@ -9,7 +9,7 @@ import {
 import { TicketEntity } from "./ticket.entity";
 import { RaffleEventEntity } from "./raffle-event.entity";
 
-import { Raffle, RaffleStatus } from "@tikka/types";
+import { Raffle, RaffleStatus } from "@atrios-reloaded/types";
 export { RaffleStatus };
 
 /**

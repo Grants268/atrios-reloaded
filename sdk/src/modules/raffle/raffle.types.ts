@@ -56,7 +56,7 @@ export interface CreateRaffleEstimate {
 
 /** On-chain raffle data. */
 import { Pick } from "typescript";
-import { Raffle } from "@tikka/types";
+import { Raffle } from "@atrios-reloaded/types";
 export type RaffleData = Pick<Raffle, "creator" | "status" | "ticketPrice" | "asset" | "maxTickets" | "ticketsSold" | "endTime" | "winner" | "winningTicketId" | "prizeAmount"> & { raffleId: number, allowMultiple: boolean, metadataCid: string, assetIssuer?: string };
 
 /** Result of cancelling a raffle. */

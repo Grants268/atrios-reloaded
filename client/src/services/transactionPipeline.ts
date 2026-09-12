@@ -1,7 +1,7 @@
 /**
  * transactionPipeline.ts — Issue #523 / SDK-consumption refactor.
  *
- * This module is now a **thin progress-emitter adapter** over the `@tikka/sdk`
+ * This module is now a **thin progress-emitter adapter** over the `@atrios-reloaded/sdk`
  * `ContractService` stage methods (`simulate` → `sign` → `submit` → `poll`).
  * All transaction mechanics — building, fee bumping, auth gathering, signing,
  * submission, polling — live in the SDK (`TransactionLifecycle`). This file only:
@@ -22,13 +22,13 @@
 import {
   TikkaSdkError,
   TikkaSdkErrorCode,
-} from "@tikka/sdk";
+} from "@atrios-reloaded/sdk";
 import type {
   SimulateResult,
   SubmitResult,
   PollConfig,
   TxMemo,
-} from "@tikka/sdk";
+} from "@atrios-reloaded/sdk";
 
 // ─── Public types ────────────────────────────────────────────────────────────
 
